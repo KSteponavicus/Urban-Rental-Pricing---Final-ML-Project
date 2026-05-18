@@ -1,0 +1,48 @@
+## Track A — Urban Rental Pricing
+
+### The Story
+
+**RentSmart** is a PropTech startup operating a mid-term rental platform
+(leases of one to six months) in a mid-sized European city.  When a landlord
+posts a new apartment listing, the platform automatically suggests a
+competitive monthly price.  Charging too much means the apartment sits empty
+for weeks and the landlord loses income; charging too little means leaving
+money on the table on every renewal.  Getting the price right from the first
+day is the core promise RentSmart makes to its landlord clients.
+
+The data science team has collected listing data from the past 18 months,
+covering apartment attributes, building characteristics, and neighbourhood
+quality metrics.  Your task is to build a pricing model that can predict the
+expected monthly rent for any new listing submitted to the platform.
+
+For RentSmart, the quality of the pricing suggestion directly affects landlord
+trust.  A model that consistently over- or under-prices listings will drive
+landlords to competing platforms, eroding the core value proposition of the
+service.  Your goal is to produce predictions that are accurate enough to
+make the automated suggestion genuinely useful — and to understand, and be
+able to explain, the conditions under which the model is less reliable.
+
+### Dataset Files
+
+| File | Rows | Columns | Target |
+|---|---|---|---|
+| `track_a_rental_pricing_train.csv` | 800 | 13 | `rent_eur_month` |
+| `track_a_rental_pricing_test.csv` | 200 | 13 | `rent_eur_month` |
+
+### Feature Reference
+
+| Feature | Type | Range | Description |
+|---|---|---|---|
+| `surface_m2` | float | 18–120 | Living area in square metres.  Primary price driver. |
+| `num_rooms` | int | 1–5 | Total rooms including living room. |
+| `floor_number` | int | 0–15 | Storey the apartment is on. |
+| `has_elevator` | binary | 0/1 | Whether the building has a working elevator. |
+| `building_age_years` | float | 0–80 | Age of the construction in years. |
+| `distance_metro_km` | float | 0.05–3.5 | Walking distance to the nearest metro stop (km). |
+| `district_prestige_score` | float | 1–10 | Composite neighbourhood quality score. |
+| `has_parking` | binary | 0/1 | Whether a parking space is included in the listing. |
+| `energy_rating` | int | 1–5 | Energy Performance Certificate class (5 = best). |
+| `num_photos` | int | 1–30 | Number of listing photos. |
+| `construction_quality_score` | float | 0–100 | Assessor estimate of build quality. |
+| `distance_supermarket_m` | int | 50–1500 | Distance to the nearest supermarket in metres. |
+| **`rent_eur_month`** | float | ~600–2400 | **Target: monthly rent in euros.** |

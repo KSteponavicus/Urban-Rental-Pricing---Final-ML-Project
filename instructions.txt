@@ -12,8 +12,8 @@ day is the core promise RentSmart makes to its landlord clients.
 
 The data science team has collected listing data from the past 18 months,
 covering apartment attributes, building characteristics, and neighbourhood
-quality metrics.  Your task is to build a pricing model that can predict the
-expected monthly rent for any new listing submitted to the platform.
+quality metrics.  YOUR TASK IS TO BUILD A PRICING MODEL THAT CAN PREDICT THE
+EXPECTED MONTHLY RENT FOR ANY NEW LISTING SUBMITTED TO THE PLATFORM.
 
 For RentSmart, the quality of the pricing suggestion directly affects landlord
 trust.  A model that consistently over- or under-prices listings will drive

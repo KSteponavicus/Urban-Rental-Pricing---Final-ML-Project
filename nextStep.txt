@@ -1,0 +1,11 @@
+1. disregard anything below <5% <- based on the currect correlations try to build a model
+
+2. price ranges relating to every feature -> well see whats the correlation looks like
+
+3. examine more deeply surface vs rent
+
+
+
+- no outliers
+
+

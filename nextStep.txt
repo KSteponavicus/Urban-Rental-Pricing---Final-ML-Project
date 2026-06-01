@@ -1,4 +1,4 @@
-1. disregard anything below <5% <- based on the currect correlations try to build a model
+1. disregard anything below <5% <- based on the correct correlations try to build a model
 
 2. price ranges relating to every feature -> well see whats the correlation looks like
 
